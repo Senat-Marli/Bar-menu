@@ -11,7 +11,6 @@
     <h1 class="title">Коктейльная Карта Под Ключ</h1>
     <div class="subtitle">15 премиальных позиций по международному стандарту IBA для вашего мероприятия</div>
 
-    <!-- Кнопки фильтрации коктейлей по категориям -->
     <div class="filter-container">
         <button class="filter-btn active" data-filter="all">Все коктейли</button>
         <button class="filter-btn" data-filter="strong">Крепкие</button>
@@ -23,8 +22,11 @@
     <div class="cocktail-grid">
         <!-- 1. Мохито -->
         <div class="cocktail-card" data-category="refreshing">
-            <div class="glass-icon g-highball f-mojito"></div>
-            <div class="cocktail-name c-mojito">Мохито</div>
+            <div class="image-container">
+                <!-- ЗАМЕНИТЕ "mojito.jpg" НА НАЗВАНИЕ ВАШЕГО ФАЙЛА С ФОТО -->
+                <img src="mojito.jpg" alt="Мохито" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Мохито</div>
             <div class="cocktail-meta">Билд • Хайболл</div>
             <ul class="recipe-list">
                 <li>Светлый ром — 50 мл</li>
@@ -37,8 +39,10 @@
 
         <!-- 2. Маргарита -->
         <div class="cocktail-card" data-category="sour">
-            <div class="glass-icon g-cocktail f-margarita"></div>
-            <div class="cocktail-name c-margarita">Маргарита</div>
+            <div class="image-container">
+                <img src="margarita.jpg" alt="Маргарита" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Маргарита</div>
             <div class="cocktail-meta">Шейк • Коктейльная рюмка</div>
             <ul class="recipe-list">
                 <li>Текила Blanco — 50 мл</li>
@@ -50,8 +54,10 @@
 
         <!-- 3. Апероль Шприц -->
         <div class="cocktail-card" data-category="refreshing">
-            <div class="glass-icon g-wine f-aperol"></div>
-            <div class="cocktail-name c-aperol">Апероль Шприц</div>
+            <div class="image-container">
+                <img src="aperol.jpg" alt="Апероль Шприц" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Апероль Шприц</div>
             <div class="cocktail-meta">Билд • Винный бокал</div>
             <ul class="recipe-list">
                 <li>Prosecco — 90 мл</li>
@@ -63,8 +69,10 @@
 
         <!-- 4. Негрони -->
         <div class="cocktail-card" data-category="strong">
-            <div class="glass-icon g-rocks f-negroni"></div>
-            <div class="cocktail-name c-negroni">Негрони</div>
+            <div class="image-container">
+                <img src="negroni.jpg" alt="Негрони" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Негрони</div>
             <div class="cocktail-meta">Стир • Рокс</div>
             <ul class="recipe-list">
                 <li>Сухой джин — 30 мл</li>
@@ -76,8 +84,10 @@
 
         <!-- 5. Лонг-Айленд -->
         <div class="cocktail-card" data-category="strong">
-            <div class="glass-icon g-highball f-long"></div>
-            <div class="cocktail-name c-longisland">Лонг-Айленд</div>
+            <div class="image-container">
+                <img src="long_island.jpg" alt="Лонг-Айленд" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Лонг-Айленд</div>
             <div class="cocktail-meta">Билд • Хайболл</div>
             <ul class="recipe-list">
                 <li>Водка / Джин / Ром — по 15 мл</li>
@@ -89,8 +99,10 @@
 
         <!-- 6. Пина Колада -->
         <div class="cocktail-card" data-category="exotic">
-            <div class="glass-icon g-hurricane f-pina"></div>
-            <div class="cocktail-name c-pina">Пина Колада</div>
+            <div class="image-container">
+                <img src="pina_colada.jpg" alt="Пина Колада" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Пина Колада</div>
             <div class="cocktail-meta">Бленд • Харрикейн</div>
             <ul class="recipe-list">
                 <li>Светлый ром — 50 мл</li>
@@ -102,8 +114,10 @@
 
         <!-- 7. Олд Фэшн -->
         <div class="cocktail-card" data-category="strong">
-            <div class="glass-icon g-rocks f-old"></div>
-            <div class="cocktail-name c-oldfashion">Олд Фэшн</div>
+            <div class="image-container">
+                <img src="default.jpg" alt="Олд Фэшн" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Олд Фэшн</div>
             <div class="cocktail-meta">Стир • Рокс</div>
             <ul class="recipe-list">
                 <li>Бурбон — 45 мл</li>
@@ -115,8 +129,10 @@
 
         <!-- 8. Космополитен -->
         <div class="cocktail-card" data-category="sour">
-            <div class="glass-icon g-cocktail f-cosmo"></div>
-            <div class="cocktail-name c-cosmo">Космополитен</div>
+            <div class="image-container">
+                <img src="cosmopolitan.jpg" alt="Космополитен" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Космополитен</div>
             <div class="cocktail-meta">Шейк • Коктейльная рюмка</div>
             <ul class="recipe-list">
                 <li>Цитрусовая водка — 40 мл</li>
@@ -128,8 +144,10 @@
 
         <!-- 9. Кровавая Мэри -->
         <div class="cocktail-card" data-category="exotic">
-            <div class="glass-icon g-highball f-bloody"></div>
-            <div class="cocktail-name c-bloody">Кровавая Мэри</div>
+            <div class="image-container">
+                <img src="default.jpg" alt="Кровавая Мэри" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Кровавая Мэри</div>
             <div class="cocktail-meta">Троуинг • Хайболл</div>
             <ul class="recipe-list">
                 <li>Водка — 45 мл</li>
@@ -141,8 +159,10 @@
 
         <!-- 10. Дайкири -->
         <div class="cocktail-card" data-category="sour">
-            <div class="glass-icon g-cocktail f-martini"></div>
-            <div class="cocktail-name c-daiquiri">Дайкири</div>
+            <div class="image-container">
+                <img src="default.jpg" alt="Дайкири" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Дайкири</div>
             <div class="cocktail-meta">Шейк • Коктейльная рюмка</div>
             <ul class="recipe-list">
                 <li>Светлый ром — 60 мл</li>
@@ -153,8 +173,10 @@
 
         <!-- 11. Джин-Тоник -->
         <div class="cocktail-card" data-category="refreshing">
-            <div class="glass-icon g-highball f-gin"></div>
-            <div class="cocktail-name c-gintonic">Джин-Тоник</div>
+            <div class="image-container">
+                <img src="default.jpg" alt="Джин-Тоник" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Джин-Тоник</div>
             <div class="cocktail-meta">Билд • Хайболл</div>
             <ul class="recipe-list">
                 <li>Сухой джин — 50 мл</li>
@@ -165,8 +187,10 @@
 
         <!-- 12. Виски Сауэр -->
         <div class="cocktail-card" data-category="sour">
-            <div class="glass-icon g-rocks f-sour"></div>
-            <div class="cocktail-name c-sour">Виски Сауэр</div>
+            <div class="image-container">
+                <img src="default.jpg" alt="Виски Сауэр" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Виски Сауэр</div>
             <div class="cocktail-meta">Шейк • Рокс</div>
             <ul class="recipe-list">
                 <li>Бурбон — 45 мл</li>
@@ -178,8 +202,10 @@
 
         <!-- 13. Черный Русский -->
         <div class="cocktail-card" data-category="strong">
-            <div class="glass-icon g-rocks f-russian"></div>
-            <div class="cocktail-name c-russian">Черный Русский</div>
+            <div class="image-container">
+                <img src="default.jpg" alt="Черный Русский" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Черный Русский</div>
             <div class="cocktail-meta">Билд • Рокс</div>
             <ul class="recipe-list">
                 <li>Водка — 50 мл</li>
@@ -189,8 +215,10 @@
 
         <!-- 14. Май Тай -->
         <div class="cocktail-card" data-category="exotic">
-            <div class="glass-icon g-rocks f-mai"></div>
-            <div class="cocktail-name c-maitai">Май Тай</div>
+            <div class="image-container">
+                <img src="default.jpg" alt="Май Тай" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Май Тай</div>
             <div class="cocktail-meta">Шейк • Рокс</div>
             <ul class="recipe-list">
                 <li>Ром светлый / темный — по 30 мл</li>
@@ -202,8 +230,10 @@
 
         <!-- 15. Мартини Драй -->
         <div class="cocktail-card" data-category="strong">
-            <div class="glass-icon g-cocktail f-martini"></div>
-            <div class="cocktail-name c-martini">Мартини Драй</div>
+            <div class="image-container">
+                <img src="default.jpg" alt="Мартини Драй" class="cocktail-img">
+            </div>
+            <div class="cocktail-name">Мартини Драй</div>
             <div class="cocktail-meta">Стир • Коктейльная рюмка</div>
             <ul class="recipe-list">
                 <li>Сухой джин — 60 мл</li>
@@ -212,7 +242,7 @@
             </ul>
         </div>
     </div>
-    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

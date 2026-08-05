@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Премиальный Выездной Бар | Коктейльная Карта</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">Коктейльная Карта Под Ключ</h1>
+    <div class="subtitle">15 премиальных позиций по международному стандарту IBA для вашего мероприятия</div>
+
+    <!-- Кнопки фильтрации коктейлей по категориям -->
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">Все коктейли</button>
+        <button class="filter-btn" data-filter="strong">Крепкие</button>
+        <button class="filter-btn" data-filter="refreshing">Освежающие</button>
+        <button class="filter-btn" data-filter="sour">Сауэры</button>
+        <button class="filter-btn" data-filter="exotic">Тропические</button>
+    </div>
+
+    <div class="cocktail-grid">
+        <!-- 1. Мохито -->
+        <div class="cocktail-card" data-category="refreshing">
+            <div class="glass-icon g-highball f-mojito"></div>
+            <div class="cocktail-name c-mojito">Мохито</div>
+            <div class="cocktail-meta">Билд • Хайболл</div>
+            <ul class="recipe-list">
+                <li>Светлый ром — 50 мл</li>
+                <li>Сок лайма — 20 мл</li>
+                <li>Свежая мята — 8 листов</li>
+                <li>Сахарный сироп — 20 мл</li>
+                <li>Содовая — 100 мл</li>
+            </ul>
+        </div>
+
+        <!-- 2. Маргарита -->
+        <div class="cocktail-card" data-category="sour">
+            <div class="glass-icon g-cocktail f-margarita"></div>
+            <div class="cocktail-name c-margarita">Маргарита</div>
+            <div class="cocktail-meta">Шейк • Коктейльная рюмка</div>
+            <ul class="recipe-list">
+                <li>Текила Blanco — 50 мл</li>
+                <li>Ликер Triple Sec — 20 мл</li>
+                <li>Сок лайма — 15 мл</li>
+                <li>Соляная каемка — 1 г</li>
+            </ul>
+        </div>
+
+        <!-- 3. Апероль Шприц -->
+        <div class="cocktail-card" data-category="refreshing">
+            <div class="glass-icon g-wine f-aperol"></div>
+            <div class="cocktail-name c-aperol">Апероль Шприц</div>
+            <div class="cocktail-meta">Билд • Винный бокал</div>
+            <ul class="recipe-list">
+                <li>Prosecco — 90 мл</li>
+                <li>Aperol — 60 мл</li>
+                <li>Содовая — 30 мл</li>
+                <li>Слайс апельсина — 1 шт</li>
+            </ul>
+        </div>
+
+        <!-- 4. Негрони -->
+        <div class="cocktail-card" data-category="strong">
+            <div class="glass-icon g-rocks f-negroni"></div>
+            <div class="cocktail-name c-negroni">Негрони</div>
+            <div class="cocktail-meta">Стир • Рокс</div>
+            <ul class="recipe-list">
+                <li>Сухой джин — 30 мл</li>
+                <li>Красный вермут — 30 мл</li>
+                <li>Ликер Campari — 30 мл</li>
+                <li>Цедра апельсина</li>
+            </ul>
+        </div>
+
+        <!-- 5. Лонг-Айленд -->
+        <div class="cocktail-card" data-category="strong">
+            <div class="glass-icon g-highball f-long"></div>
+            <div class="cocktail-name c-longisland">Лонг-Айленд</div>
+            <div class="cocktail-meta">Билд • Хайболл</div>
+            <ul class="recipe-list">
+                <li>Водка / Джин / Ром — по 15 мл</li>
+                <li>Текила / Triple Sec — по 15 мл</li>
+                <li>Сок лимона — 25 мл</li>
+                <li>Кола — 30 мл</li>
+            </ul>
+        </div>
+
+        <!-- 6. Пина Колада -->
+        <div class="cocktail-card" data-category="exotic">
+            <div class="glass-icon g-hurricane f-pina"></div>
+            <div class="cocktail-name c-pina">Пина Колада</div>
+            <div class="cocktail-meta">Бленд • Харрикейн</div>
+            <ul class="recipe-list">
+                <li>Светлый ром — 50 мл</li>
+                <li>Кокосовые сливки — 30 мл</li>
+                <li>Ананасовый сок — 90 мл</li>
+                <li>Лед краш</li>
+            </ul>
+        </div>
+
+        <!-- 7. Олд Фэшн -->
+        <div class="cocktail-card" data-category="strong">
+            <div class="glass-icon g-rocks f-old"></div>
+            <div class="cocktail-name c-oldfashion">Олд Фэшн</div>
+            <div class="cocktail-meta">Стир • Рокс</div>
+            <ul class="recipe-list">
+                <li>Бурбон — 45 мл</li>
+                <li>Ангостура — 2 дэша</li>
+                <li>Тростниковый сахар — 1 кубик</li>
+                <li>Цедра апельсина</li>
+            </ul>
+        </div>
+
+        <!-- 8. Космополитен -->
+        <div class="cocktail-card" data-category="sour">
+            <div class="glass-icon g-cocktail f-cosmo"></div>
+            <div class="cocktail-name c-cosmo">Космополитен</div>
+            <div class="cocktail-meta">Шейк • Коктейльная рюмка</div>
+            <ul class="recipe-list">
+                <li>Цитрусовая водка — 40 мл</li>
+                <li>Ликер Triple Sec — 15 мл</li>
+                <li>Сок лайма — 15 мл</li>
+                <li>Клюквенный морс — 30 мл</li>
+            </ul>
+        </div>
+
+        <!-- 9. Кровавая Мэри -->
+        <div class="cocktail-card" data-category="exotic">
+            <div class="glass-icon g-highball f-bloody"></div>
+            <div class="cocktail-name c-bloody">Кровавая Мэри</div>
+            <div class="cocktail-meta">Троуинг • Хайболл</div>
+            <ul class="recipe-list">
+                <li>Водка — 45 мл</li>
+                <li>Томатный сок — 90 мл</li>
+                <li>Лимонный сок — 15 мл</li>
+                <li>Табаско / Ворчестер</li>
+            </ul>
+        </div>
+
+        <!-- 10. Дайкири -->
+        <div class="cocktail-card" data-category="sour">
+            <div class="glass-icon g-cocktail f-martini"></div>
+            <div class="cocktail-name c-daiquiri">Дайкири</div>
+            <div class="cocktail-meta">Шейк • Коктейльная рюмка</div>
+            <ul class="recipe-list">
+                <li>Светлый ром — 60 мл</li>
+                <li>Сок лайма — 20 мл</li>
+                <li>Сахарный сироп — 15 мл</li>
+            </ul>
+        </div>
+
+        <!-- 11. Джин-Тоник -->
+        <div class="cocktail-card" data-category="refreshing">
+            <div class="glass-icon g-highball f-gin"></div>
+            <div class="cocktail-name c-gintonic">Джин-Тоник</div>
+            <div class="cocktail-meta">Билд • Хайболл</div>
+            <ul class="recipe-list">
+                <li>Сухой джин — 50 мл</li>
+                <li>Тоник — 120 мл</li>
+                <li>Лайм (долька) — 1 шт</li>
+            </ul>
+        </div>
+
+        <!-- 12. Виски Сауэр -->
+        <div class="cocktail-card" data-category="sour">
+            <div class="glass-icon g-rocks f-sour"></div>
+            <div class="cocktail-name c-sour">Виски Сауэр</div>
+            <div class="cocktail-meta">Шейк • Рокс</div>
+            <ul class="recipe-list">
+                <li>Бурбон — 45 мл</li>
+                <li>Лимонный сок — 30 мл</li>
+                <li>Яичный белок — 15 мл</li>
+                <li>Сахарный сироп — 15 мл</li>
+            </ul>
+        </div>
+
+        <!-- 13. Черный Русский -->
+        <div class="cocktail-card" data-category="strong">
+            <div class="glass-icon g-rocks f-russian"></div>
+            <div class="cocktail-name c-russian">Черный Русский</div>
+            <div class="cocktail-meta">Билд • Рокс</div>
+            <ul class="recipe-list">
+                <li>Водка — 50 мл</li>
+                <li>Кофейный ликер — 20 мл</li>
+            </ul>
+        </div>
+
+        <!-- 14. Май Тай -->
+        <div class="cocktail-card" data-category="exotic">
+            <div class="glass-icon g-rocks f-mai"></div>
+            <div class="cocktail-name c-maitai">Май Тай</div>
+            <div class="cocktail-meta">Шейк • Рокс</div>
+            <ul class="recipe-list">
+                <li>Ром светлый / темный — по 30 мл</li>
+                <li>Orange Curacao — 15 мл</li>
+                <li>Миндальный сироп — 15 мл</li>
+                <li>Сок лайма — 30 мл</li>
+            </ul>
+        </div>
+
+        <!-- 15. Мартини Драй -->
+        <div class="cocktail-card" data-category="strong">
+            <div class="glass-icon g-cocktail f-martini"></div>
+            <div class="cocktail-name c-martini">Мартини Драй</div>
+            <div class="cocktail-meta">Стир • Коктейльная рюмка</div>
+            <ul class="recipe-list">
+                <li>Сухой джин — 60 мл</li>
+                <li>Сухой вермут — 10 мл</li>
+                <li>Зеленая оливка — 1 шт</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* Общие настройки страницы */
+body {
+    background-color: #0b0b0d;
+    color: #e4e4eb;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 50px 20px;
+}
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffb703;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+.subtitle {
+    text-align: center;
+    color: #8ecae6;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* Кнопки меню фильтрации */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.filter-btn {
+    background: #1a1a24;
+    color: #ffffff;
+    border: 1px solid #323242;
+    padding: 10px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.filter-btn:hover {
+    border-color: #ffb703;
+    background: #242433;
+}
+.filter-btn.active {
+    background: #ffb703;
+    color: #0b0b0d;
+    border-color: #ffb703;
+}
+
+/* Сетка для карточек */
+.cocktail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Карточка коктейля */
+.cocktail-card {
+    background: linear-gradient(145deg, #141419, #1e1e24);
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid #2b2b36;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+}
+.cocktail-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffb703;
+    box-shadow: 0 15px 40px rgba(255, 183, 3, 0.15);
+}
+
+/* Эффект скрытия карточки при фильтрации */
+.cocktail-card.hide {
+    display: none;
+}
+
+/* Информация о коктейле */
+.cocktail-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+    letter-spacing: 1px;
+}
+.cocktail-meta {
+    font-size: 0.85rem;
+    color: #828291;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.recipe-list {
+    text-align: left;
+    padding-left: 15px;
+    font-size: 0.95rem;
+    color: #c4c4d4;
+    line-height: 1.7;
+    margin: 0;
+    list-style-type: '▪ ';
+}
+.recipe-list li {
+    margin-bottom: 6px;
+}
+
+/* CSS-Геометрия бокалов */
+.glass-icon {
+    width: 70px;
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+    opacity: 0.9;
+}
+.g-highball { width: 44px; border: 3px solid #ffffff; border-radius: 4px; }
+.g-cocktail { width: 0; height: 0; border-left: 35px solid transparent; border-right: 35px solid transparent; border-top: 55px solid #ffffff; }
+.g-cocktail::after { content: ''; position: absolute; width: 4px; height: 35px; background: #ffffff; top: 55px; left: -2px; }
+.g-wine { width: 56px; height: 60px; border: 3px solid #ffffff; border-radius: 50% 50% 40% 40%; }
+.g-wine::after { content: ''; position: absolute; width: 4px; height: 30px; background: #ffffff; bottom: -30px; left: 26px; }
+.g-rocks { width: 50px; height: 65px; border: 3px solid #ffffff; border-radius: 4px 4px 10px 10px; }
+.g-hurricane { width: 46px; height: 75px; border: 3px solid #ffffff; border-radius: 30px 30px 20px 20px; }
+
+/* Цветовые стили текстов */
+.c-mojito { color: #64dfdf; }
+.c-margarita { color: #d8f3dc; }
+.c-aperol { color: #ff5400; }
+.c-negroni { color: #d00000; }
+.c-longisland { color: #9d4edd; }
+.c-pina { color: #ffb703; }
+.c-oldfashion { color: #f77f00; }
+.c-cosmo { color: #ff4d6d; }
+.c-bloody { color: #e63946; }
+.c-daiquiri { color: #e9ff70; }
+.c-gintonic { color: #e0fbfc; }
+.c-sour { color: #ffea00; }
+.c-russian { color: #7f5539; }
+.c-maitai { color: #fb5607; }
+.c-martini { color: #ccd5ae; }
+
+/* Градиентные наливки для жидкостей */
+.f-mojito { background: linear-gradient(to top, #2d6a4f 75%, transparent 25%); }
+.f-margarita { border-top-color: #b7e4c7; }
+.f-aperol { background: linear-gradient(to top, #ff7b00 80%, transparent 20%); }
+.f-negroni { background: linear-gradient(to top, #9b2226 70%, transparent 30%); }
+.f-long { background: linear-gradient(to top, #480ca8 85%, transparent 15%); }
+.f-pina { background: linear-gradient(to top, #faedcd 85%, transparent 15%); }
+.f-old { background: linear-gradient(to top, #bb3e03 50%, transparent 50%); }
+.f-cosmo { border-top-color: #ff758f; }
+.f-bloody { background: linear-gradient(to top, #ae2012 85%, transparent 15%); }
+.f-daiquiri { border-top-color: #edf2f4; }
+.f-gin { background: linear-gradient(to top, #edf2f4 70%, transparent 30%); }
+.f-sour { background: linear-gradient(to top, #eeef20 65%, transparent 35%); }
+.f-russian { background: linear-gradient(to top, #4a3728 60%, transparent 40%); }
+.f-mai { background: linear-gradient(to top, #ca6702 75%, transparent 25%); }
+.f-martini { border-top-color: #e2e8f0; }
+document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cocktailCards = document.querySelectorAll('.cocktail-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Переключаем активный класс на кнопках
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filterValue = button.getAttribute('data-filter');
+
+            // Фильтруем карточки коктейлей
+            cocktailCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                
+                if (filterValue === 'all' || cardCategory === filterValue) {
+                    card.classList.remove('hide');
+                } else {
+                    card.classList.add('hide');
+                }
+            });
+        });
+    });
+});

@@ -3,245 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Премиальный Выездной Бар | Коктейльная Карта</title>
+    <title>Коктейльная Карта | Выездной Бар</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1 class="title">Коктейльная Карта Под Ключ</h1>
-    <div class="subtitle">15 премиальных позиций по международному стандарту IBA для вашего мероприятия</div>
+    <header class="header">
+        <h1 class="title">Коктейльная Карта</h1>
+        <p class="subtitle">15 проверенных рецептов для вашего мероприятия. Классика, которая всегда работает.</p>
+    </header>
 
     <div class="filter-container">
         <button class="filter-btn active" data-filter="all">Все коктейли</button>
         <button class="filter-btn" data-filter="strong">Крепкие</button>
         <button class="filter-btn" data-filter="refreshing">Освежающие</button>
         <button class="filter-btn" data-filter="sour">Сауэры</button>
-        <button class="filter-btn" data-filter="exotic">Тропические</button>
+        <button class="filter-btn" data-filter="tropical">Тропические</button>
     </div>
-    
 
     <div class="cocktail-grid">
-        <!-- 1. Мохито -->
+        <!-- 1. Мохито — Освежающие -->
         <div class="cocktail-card" data-category="refreshing">
             <div class="image-container">
-                <!-- ЗАМЕНИТЕ "mojito.jpg" НА НАЗВАНИЕ ВАШЕГО ФАЙЛА С ФОТО -->
                 <img src="mojito.jpg" alt="Мохито" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Мохито</div>
-            <div class="cocktail-meta">Билд • Хайболл</div>
-            <ul class="recipe-list">
-                <li>Светлый ром — 50 мл</li>
-                <li>Сок лайма — 20 мл</li>
-                <li>Свежая мята — 8 листов</li>
-                <li>Сахарный сироп — 20 мл</li>
-                <li>Содовая — 100 мл</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Мохито</div>
+                <div class="cocktail-meta">Билд • Хайболл</div>
+                <ul class="recipe-list">
+                    <li>Светлый ром — 50 мл</li>
+                    <li>Сок лайма — 20 мл</li>
+                    <li>Свежая мята — 8 листов</li>
+                    <li>Сахарный сироп — 20 мл</li>
+                    <li>Содовая — 100 мл</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- 2. Маргарита -->
+        <!-- 2. Маргарита — Сауэр -->
         <div class="cocktail-card" data-category="sour">
             <div class="image-container">
                 <img src="margarita.jpg" alt="Маргарита" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Маргарита</div>
-            <div class="cocktail-meta">Шейк • Коктейльная рюмка</div>
-            <ul class="recipe-list">
-                <li>Текила Blanco — 50 мл</li>
-                <li>Ликер Triple Sec — 20 мл</li>
-                <li>Сок лайма — 15 мл</li>
-                <li>Соляная каемка — 1 г</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Маргарита</div>
+                <div class="cocktail-meta">Шейк • Коктейльная рюмка</div>
+                <ul class="recipe-list">
+                    <li>Текила Blanco — 50 мл</li>
+                    <li>Ликер Triple Sec — 20 мл</li>
+                    <li>Сок лайма — 15 мл</li>
+                    <li>Соляная каемка — 1 г</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- 3. Апероль Шприц -->
+        <!-- 3. Апероль Шприц — Освежающие -->
         <div class="cocktail-card" data-category="refreshing">
             <div class="image-container">
                 <img src="aperol.jpg" alt="Апероль Шприц" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Апероль Шприц</div>
-            <div class="cocktail-meta">Билд • Винный бокал</div>
-            <ul class="recipe-list">
-                <li>Prosecco — 90 мл</li>
-                <li>Aperol — 60 мл</li>
-                <li>Содовая — 30 мл</li>
-                <li>Слайс апельсина — 1 шт</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Апероль Шприц</div>
+                <div class="cocktail-meta">Билд • Винный бокал</div>
+                <ul class="recipe-list">
+                    <li>Prosecco — 90 мл</li>
+                    <li>Aperol — 60 мл</li>
+                    <li>Содовая — 30 мл</li>
+                    <li>Слайс апельсина — 1 шт</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- 4. Негрони -->
+        <!-- 4. Негрони — Крепкие -->
         <div class="cocktail-card" data-category="strong">
             <div class="image-container">
                 <img src="negroni.jpg" alt="Негрони" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Негрони</div>
-            <div class="cocktail-meta">Стир • Рокс</div>
-            <ul class="recipe-list">
-                <li>Сухой джин — 30 мл</li>
-                <li>Красный вермут — 30 мл</li>
-                <li>Ликер Campari — 30 мл</li>
-                <li>Цедра апельсина</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Негрони</div>
+                <div class="cocktail-meta">Стир • Рокс</div>
+                <ul class="recipe-list">
+                    <li>Сухой джин — 30 мл</li>
+                    <li>Красный вермут — 30 мл</li>
+                    <li>Ликер Campari — 30 мл</li>
+                    <li>Цедра апельсина</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- 5. Лонг-Айленд -->
+        <!-- 5. Лонг-Айленд — Крепкие -->
         <div class="cocktail-card" data-category="strong">
             <div class="image-container">
                 <img src="long_island.jpg" alt="Лонг-Айленд" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Лонг-Айленд</div>
-            <div class="cocktail-meta">Билд • Хайболл</div>
-            <ul class="recipe-list">
-                <li>Водка / Джин / Ром — по 15 мл</li>
-                <li>Текила / Triple Sec — по 15 мл</li>
-                <li>Сок лимона — 25 мл</li>
-                <li>Кола — 30 мл</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Лонг-Айленд</div>
+                <div class="cocktail-meta">Билд • Хайболл</div>
+                <ul class="recipe-list">
+                    <li>Водка / Джин / Ром — по 15 мл</li>
+                    <li>Текила / Triple Sec — по 15 мл</li>
+                    <li>Сок лимона — 25 мл</li>
+                    <li>Кола — 30 мл</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- 6. Пина Колада -->
-        <div class="cocktail-card" data-category="exotic">
+        <!-- 6. Пина Колада — Тропические -->
+        <div class="cocktail-card" data-category="tropical">
             <div class="image-container">
                 <img src="pina_colada.jpg" alt="Пина Колада" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Пина Колада</div>
-            <div class="cocktail-meta">Бленд • Харрикейн</div>
-            <ul class="recipe-list">
-                <li>Светлый ром — 50 мл</li>
-                <li>Кокосовые сливки — 30 мл</li>
-                <li>Ананасовый сок — 90 мл</li>
-                <li>Лед краш</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Пина Колада</div>
+                <div class="cocktail-meta">Бленд • Харрикейн</div>
+                <ul class="recipe-list">
+                    <li>Светлый ром — 50 мл</li>
+                    <li>Кокосовые сливки — 30 мл</li>
+                    <li>Ананасовый сок — 90 мл</li>
+                    <li>Лед краш</li>
+                </ul>
+            </div>
         </div>
-        <!-- 7. Олд Фэшн -->
+
+        <!-- 7. Олд Фэшн — Крепкие -->
         <div class="cocktail-card" data-category="strong">
             <div class="image-container">
                 <img src="old_fashioned.jpg" alt="Олд Фэшн" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Олд Фэшн</div>
-            <div class="cocktail-meta">Стир • Рокс</div>
-            <ul class="recipe-list">
-                <li>Бурбон — 45 мл</li>
-                <li>Ангостура — 2 дэша</li>
-                <li>Тростниковый сахар — 1 кубик</li>
-                <li>Цедра апельсина</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Олд Фэшн</div>
+                <div class="cocktail-meta">Стир • Рокс</div>
+                <ul class="recipe-list">
+                    <li>Бурбон — 45 мл</li>
+                    <li>Ангостура — 2 дэша</li>
+                    <li>Тростниковый сахар — 1 кубик</li>
+                    <li>Цедра апельсина</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- 8. Космополитен -->
+        <!-- 8. Космополитен — Сауэр -->
         <div class="cocktail-card" data-category="sour">
             <div class="image-container">
                 <img src="cosmopolitan.jpg" alt="Космополитен" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Космополитен</div>
-            <div class="cocktail-meta">Шейк • Коктейльная рюмка</div>
-            <ul class="recipe-list">
-                <li>Цитрусовая водка — 40 мл</li>
-                <li>Ликер Triple Sec — 15 мл</li>
-                <li>Сок лайма — 15 мл</li>
-                <li>Клюквенный морс — 30 мл</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Космополитен</div>
+                <div class="cocktail-meta">Шейк • Коктейльная рюмка</div>
+                <ul class="recipe-list">
+                    <li>Цитрусовая водка — 40 мл</li>
+                    <li>Ликер Triple Sec — 15 мл</li>
+                    <li>Сок лайма — 15 мл</li>
+                    <li>Клюквенный морс — 30 мл</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- 9. Кровавая Мэри -->
-        <div class="cocktail-card" data-category="exotic">
+        <!-- 9. Кровавая Мэри — Тропические -->
+        <div class="cocktail-card" data-category="tropical">
             <div class="image-container">
                 <img src="bloody_mary.jpg" alt="Кровавая Мэри" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Кровавая Мэри</div>
-            <div class="cocktail-meta">Троуинг • Хайболл</div>
-            <ul class="recipe-list">
-                <li>Водка — 45 мл</li>
-                <li>Томатный сок — 90 мл</li>
-                <li>Лимонный сок — 15 мл</li>
-                <li>Табаско / Ворчестер</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Кровавая Мэри</div>
+                <div class="cocktail-meta">Троуинг • Хайболл</div>
+                <ul class="recipe-list">
+                    <li>Водка — 45 мл</li>
+                    <li>Томатный сок — 90 мл</li>
+                    <li>Лимонный сок — 15 мл</li>
+                    <li>Табаско / Ворчестер</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- 10. Дайкири -->
+        <!-- 10. Дайкири — Сауэр -->
         <div class="cocktail-card" data-category="sour">
             <div class="image-container">
                 <img src="daiquiri.jpg" alt="Дайкири" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Дайкири</div>
-            <div class="cocktail-meta">Шейк • Коктейльная рюмка</div>
-            <ul class="recipe-list">
-                <li>Светлый ром — 60 мл</li>
-                <li>Сок лайма — 20 мл</li>
-                <li>Сахарный сироп — 15 мл</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Дайкири</div>
+                <div class="cocktail-meta">Шейк • Коктейльная рюмка</div>
+                <ul class="recipe-list">
+                    <li>Светлый ром — 60 мл</li>
+                    <li>Сок лайма — 20 мл</li>
+                    <li>Сахарный сироп — 15 мл</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- 11. Джин-Тоник -->
+        <!-- 11. Джин-Тоник — Освежающие -->
         <div class="cocktail-card" data-category="refreshing">
             <div class="image-container">
                 <img src="gin_tonic.jpg" alt="Джин-Тоник" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Джин-Тоник</div>
-            <div class="cocktail-meta">Билд • Хайболл</div>
-            <ul class="recipe-list">
-                <li>Сухой джин — 50 мл</li>
-                <li>Тоник — 120 мл</li>
-                <li>Лайм (долька) — 1 шт</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Джин-Тоник</div>
+                <div class="cocktail-meta">Билд • Хайболл</div>
+                <ul class="recipe-list">
+                    <li>Сухой джин — 50 мл</li>
+                    <li>Тоник — 120 мл</li>
+                    <li>Лайм (долька) — 1 шт</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- 12. Виски Сауэр -->
+        <!-- 12. Виски Сауэр — Сауэр -->
         <div class="cocktail-card" data-category="sour">
             <div class="image-container">
                 <img src="whiskey_sour.jpg" alt="Виски Сауэр" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Виски Сауэр</div>
-            <div class="cocktail-meta">Шейк • Рокс</div>
-            <ul class="recipe-list">
-                <li>Бурбон — 45 мл</li>
-                <li>Лимонный сок — 30 мл</li>
-                <li>Яичный белок — 15 мл</li>
-                <li>Сахарный сироп — 15 мл</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Виски Сауэр</div>
+                <div class="cocktail-meta">Шейк • Рокс</div>
+                <ul class="recipe-list">
+                    <li>Бурбон — 45 мл</li>
+                    <li>Лимонный сок — 30 мл</li>
+                    <li>Яичный белок — 15 мл</li>
+                    <li>Сахарный сироп — 15 мл</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- 13. Черный Русский -->
+        <!-- 13. Черный Русский — Крепкие -->
         <div class="cocktail-card" data-category="strong">
             <div class="image-container">
                 <img src="black_russian.jpg" alt="Черный Русский" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Черный Русский</div>
-            <div class="cocktail-meta">Билд • Рокс</div>
-            <ul class="recipe-list">
-                <li>Водка — 50 мл</li>
-                <li>Кофейный ликер — 20 мл</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Черный Русский</div>
+                <div class="cocktail-meta">Билд • Рокс</div>
+                <ul class="recipe-list">
+                    <li>Водка — 50 мл</li>
+                    <li>Кофейный ликер — 20 мл</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- 14. Май Тай -->
-        <div class="cocktail-card" data-category="exotic">
+        <!-- 14. Май Тай — Тропические -->
+        <div class="cocktail-card" data-category="tropical">
             <div class="image-container">
                 <img src="mai_tai.jpg" alt="Май Тай" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Май Тай</div>
-            <div class="cocktail-meta">Шейк • Рокс</div>
-            <ul class="recipe-list">
-                <li>Ром светлый / темный — по 30 мл</li>
-                <li>Orange Curacao — 15 мл</li>
-                <li>Миндальный сироп — 15 мл</li>
-                <li>Сок лайма — 30 мл</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Май Тай</div>
+                <div class="cocktail-meta">Шейк • Рокс</div>
+                <ul class="recipe-list">
+                    <li>Ром светлый / темный — по 30 мл</li>
+                    <li>Orange Curacao — 15 мл</li>
+                    <li>Миндальный сироп — 15 мл</li>
+                    <li>Сок лайма — 30 мл</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- 15. Мартини Драй -->
+        <!-- 15. Мартини Драй — Крепкие -->
         <div class="cocktail-card" data-category="strong">
             <div class="image-container">
                 <img src="dry_martini.jpg" alt="Мартини Драй" class="cocktail-img">
             </div>
-            <div class="cocktail-name">Мартини Драй</div>
-            <div class="cocktail-meta">Стир • Коктейльная рюмка</div>
-            <ul class="recipe-list">
-                <li>Сухой джин — 60 мл</li>
-                <li>Сухой вермут — 10 мл</li>
-                <li>Зеленая оливка — 1 шт</li>
-            </ul>
+            <div class="cocktail-info">
+                <div class="cocktail-name">Мартини Драй</div>
+                <div class="cocktail-meta">Стир • Коктейльная рюмка</div>
+                <ul class="recipe-list">
+                    <li>Сухой джин — 60 мл</li>
+                    <li>Сухой вермут — 10 мл</li>
+                    <li>Зеленая оливка — 1 шт</li>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <p>Выездной бар для вашего мероприятия</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
